@@ -15,8 +15,17 @@ import lombok.ToString;
 @EqualsAndHashCode
 @ToString
 @Embeddable
+
+/**
+ * Coordinates class
+ * Contains three variables, representing the three values of coordination
+ * Using Lombok, Setter and Getter, ToString, Constructors, etc. are provided
+ */
 public class Coordinates {
-  private double longitude;
-  private double latitude;
-  private float elevation;
+    /*Longitude: Geographic position*/
+    private double longitude;
+    /*Latitude: Geographic position*/
+    private double latitude;
+    /*Elevation: Geographic position*/
+    private float elevation;
 }

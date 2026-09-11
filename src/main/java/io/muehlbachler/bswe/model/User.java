@@ -21,6 +21,11 @@ import lombok.ToString;
 @ToString
 @Entity
 @Table(name = "users")
+/**
+ * User Class
+ * Represents a user in the program
+ * It has an ID (Generated Automatically), and a username as String
+ */
 public class User {
   @Id
   @GeneratedValue(strategy = GenerationType.UUID)
@@ -28,6 +33,11 @@ public class User {
   @Column(unique = true, nullable = false)
   private String username;
 
+    /**
+     * withId: Creates and returns a user, with a specified Id
+     * @param id: Id given as parameter
+     * @return user: New User instance
+     */
   public static User withId(final String id) {
     final User user = new User();
     user.setId(null);
